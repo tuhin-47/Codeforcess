@@ -27,3 +27,27 @@ namespace Codeforces118A
         }
     }
 }
+
+
+// another approch
+
+using System;
+
+namespace Codeforces118A
+{
+    internal class Codeforces118AClass
+    {
+        static void Main(string[] args)
+        {
+            string? word = Console.ReadLine();
+            word = word?.ToLower();
+            string vowels = "aeiouy";
+
+            foreach(char ch in word)
+            {
+                if (!vowels.Contains(ch))
+                    Console.Write($".{ch}");
+            }
+        }
+    }
+}
